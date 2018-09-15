@@ -1,4 +1,4 @@
-var Discord = require('discord.io');
+const Discord = require("discord.js");
 
 // Initialize Discord Bot
 const bot = new Discord.Client({disableEveryone: true});
