@@ -14,7 +14,8 @@ bot.on('message', msg => {
       console.log(msg.content);
       var args = msg.content.substring(7).split(' ');
       var cmd = args[1];
-       console.log(cmd);
+      var cmd2 = args[2];
+       console.log(cmd2);
         args = args.splice(7);
         switch(cmd) {
             // !ping
