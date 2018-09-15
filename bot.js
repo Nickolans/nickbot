@@ -8,22 +8,11 @@ bot.on('ready', async () => {
   bot.user.setActivity(`Hey, Wassup!`);
 });
 
-bot.on('message', async message => {
-  //message.toLowerCase;
-  if (message.substring(0, 7) == 'nickbot') {
-    message.channel.send('RECIEVED!');
-    var args = message.substring(7).split(' ');
-        var cmd = args[1];
-        switch(cmd) {
-            // !ping
-            case 'hello':
-                message.channel.send('Hey!');
-            break;
-            // Just add any case commands if you want to..
-         }
-  } else if (message.substring(0, 8) == 'nickbot?') {
-       message.channel.send('Yes shister?');
-     }
-});
+bot.on('message', msg => {
+    //msg.toLowerCase;
+    if (msg.substring(0, 7) == 'nickbot') {
+      msg.reply('pong');
+    }
+  });
 
 bot.login(process.env.token);
