@@ -11,12 +11,25 @@ bot.on('ready', async () => {
 bot.on('message', msg => {
     msg.content.toLowerCase;
     if (msg.content.substring(0, 7) == 'nickbot' || msg.content.substring(0, 7) == 'Nickbot' ) {
+      
       console.log(msg.content);
       var args = msg.content.substring(7).split(' ');
       var cmd = args[1];
-      var cmd2 = args[2];
-       console.log(cmd2);
-        args = args.splice(7);
+      
+       if (args.length > 2) {
+               console.log("Length > 2");
+               var newString = "";
+               for (i = 0; i < args.length; i++) { 
+                   if (i == 1) {
+                       newString = args[i]
+                   } else {
+                    newString += " " + args[i];
+                   }
+            }
+             console.log(newString);
+             cmd = newString;
+           }
+       
         switch(cmd) {
             // !ping
             case "hello":
