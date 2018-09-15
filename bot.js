@@ -10,7 +10,7 @@ bot.on('ready', async () => {
 
 bot.on('message', msg => {
     msg.content.toLowerCase;
-    if (msg.content.substring(0, 7) == 'nickbot') {
+    if (msg.content.substring(0, 7) == 'nickbot' || msg.content.substring(0, 7) == 'Nickbot' ) {
       var args = msg.content.substring(7).split(' ');
       var cmd = args[1];
        
@@ -22,7 +22,9 @@ bot.on('message', msg => {
             break;
             // Just add any case commands if you want to..
          }
-    } else if (msg.content.substring(0, 8) == 'nickbot?') {
+    } 
+  
+  if (msg.content.substring(0, 8) == 'nickbot?' || msg.content.substring(0, 7) == 'Nickbot?') {
       msg.reply('yes shister?');
     }
   });
