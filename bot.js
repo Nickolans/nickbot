@@ -13,7 +13,7 @@ bot.on('message', msg => {
     if (msg.content.substring(0, 7) == 'nickbot' || msg.content.substring(0, 7) == 'Nickbot' ) {
       var args = msg.content.substring(7).split(' ');
       var cmd = args[1];
-       
+       console.log(cmd);
         args = args.splice(7);
         switch(cmd) {
             // !ping
