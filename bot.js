@@ -11,7 +11,19 @@ bot.on('ready', async () => {
 bot.on('message', msg => {
     msg.content.toLowerCase;
     if (msg.content.substring(0, 7) == 'nickbot') {
-      msg.reply('pong');
+      var args = message.substring(7).split(' ');
+      var cmd = args[1];
+       
+        args = args.splice(7);
+        switch(cmd) {
+            // !ping
+            case 'hello':
+                msg.reply('Hey!');
+            break;
+            // Just add any case commands if you want to..
+         }
+    } else if (msg.content.substring(0, 7) == 'nickbot') {
+      msg.reply('yes shister?');
     }
   });
 
