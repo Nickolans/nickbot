@@ -18,11 +18,15 @@ bot.on('message', msg => {
         switch(cmd) {
             // !ping
             case 'hello':
-                msg.reply('Hey!');
+                msg.reply("Hey!");
             break;
-            // Just add any case commands if you want to..
+            //
             case 'go home':
-                msg.reply('lol no.');
+                msg.reply("lol no.");
+            break;
+            //
+            case 'do you love me?':
+                msg.reply("I'm not here for commitment lol.");
             break;
          }
     } 
