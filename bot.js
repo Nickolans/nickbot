@@ -22,7 +22,7 @@ bot.on('message', msg => {
             break;
             // Just add any case commands if you want to..
          }
-    } else if (msg.content.substring(0, 7) == 'nickbot') {
+    } else if (msg.content.substring(0, 8) == 'nickbot?') {
       msg.reply('yes shister?');
     }
   });
