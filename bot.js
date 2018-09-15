@@ -9,8 +9,8 @@ bot.on('ready', async () => {
 });
 
 bot.on('message', msg => {
-    //msg.toLowerCase;
-    if (msg.content == 'nickbot') {
+    msg.content.toLowerCase;
+    if (msg.content.substring(0, 7) == 'nickbot') {
       msg.reply('pong');
     }
   });
