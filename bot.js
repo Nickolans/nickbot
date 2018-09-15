@@ -17,15 +17,15 @@ bot.on('message', msg => {
         args = args.splice(7);
         switch(cmd) {
             // !ping
-            case 'hello':
+            case "hello":
                 msg.reply("Hey!");
             break;
             //
-            case 'go home':
+            case "go home":
                 msg.reply("lol no.");
             break;
             //
-            case 'do you love me?':
+            case "do you love me?":
                 msg.reply("I'm not here for commitment lol.");
             break;
          }
