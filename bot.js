@@ -21,6 +21,9 @@ bot.on('message', msg => {
                 msg.reply('Hey!');
             break;
             // Just add any case commands if you want to..
+            case 'go home':
+                msg.reply('lol no.');
+            break;
          }
     } 
   
