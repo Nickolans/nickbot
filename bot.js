@@ -7,7 +7,7 @@ bot.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
 });
 
-bot.on('message', msg => {
+bot.on('message', async msg => {
   
   msg.toLowerCase;
   if (msg.substring(0, 7) == 'nickbot') {
@@ -18,12 +18,12 @@ bot.on('message', msg => {
         switch(cmd) {
             // !ping
             case 'hello':
-                msg.reply('Hey!');
+                msg.channel.send("Hey!");
             break;
             // Just add any case commands if you want to..
          }
   } else if (msg.substring(0, 8) == 'nickbot?') {
-       msg.reply('Yes shister?');
+       msg.channel.send("Yes shister?");
      }
 
 });
