@@ -24,7 +24,7 @@ bot.on('message', msg => {
          }
     } 
   
-  if (msg.content.substring(0, 8) == 'nickbot?' || msg.content.substring(0, 7) == 'Nickbot?') {
+  if (msg.content.substring(0, 8) == 'nickbot?' || msg.content.substring(0, 8) == 'Nickbot?') {
       msg.reply('yes shister?');
     }
   });
