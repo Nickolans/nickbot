@@ -67,6 +67,10 @@ bot.on('message', msg => {
             case "fight me":
                 msg.reply("hit me I dare you.");
             break;
+            //
+            case "hey":
+                msg.reply("hey girl!");
+            break;
          }
     } 
   
