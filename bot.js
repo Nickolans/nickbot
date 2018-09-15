@@ -11,7 +11,8 @@ bot.on("ready", async () => {
 bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `!`
-    if (message.substring(0, 7) == 'nickbot' || message.substring(0, 7) == 'Nickbot') {
+    message.toLowerCase;
+    if (message.substring(0, 7) == 'nickbot') {
 
         var args = message.substring(7).split(' ');
         var cmd = args[1];
@@ -27,6 +28,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             break;
             // Just add any case commands if you want to..
          }
+     } else if (message.substring(0, 8) == 'nickbot?') {
+       bot.sendMessage({
+            to: channelID,
+            message: 'Yes shister??'
+        });
      }
 });
 
