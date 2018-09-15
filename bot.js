@@ -11,6 +11,7 @@ bot.on('ready', async () => {
 bot.on('message', msg => {
     msg.content.toLowerCase;
     if (msg.content.substring(0, 7) == 'nickbot' || msg.content.substring(0, 7) == 'Nickbot' ) {
+      console.log(msg);
       var args = msg.content.substring(7).split(' ');
       var cmd = args[1];
        console.log(cmd);
