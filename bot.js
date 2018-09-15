@@ -10,7 +10,7 @@ bot.on('ready', async () => {
 
 bot.on('message', msg => {
     //msg.toLowerCase;
-    if (msg.substring(0, 7) == 'nickbot') {
+    if (msg.content == 'nickbot') {
       msg.reply('pong');
     }
   });
