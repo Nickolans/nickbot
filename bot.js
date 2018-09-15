@@ -3,27 +3,26 @@ const Discord = require("discord.js");
 // Initialize Discord Bot
 const bot = new Discord.Client();
 
-bot.on('ready', () => {
-  console.log(`Logged in as ${client.user.tag}!`);
+bot.on("ready", async () => {
+  console.log(`${bot.user.username} is online!`);
+  bot.user.setActivity(`Hey, Wassup!`);
 });
 
-bot.on('message', async msg => {
+bot.on("message", async message => {
   
-  msg.toLowerCase;
-  if (msg.substring(0, 7) == 'nickbot') {
-    var args = msg.substring(7).split(' ');
+  message.toLowerCase;
+  if (message.substring(0, 7) == "nickbot") {
+    var args = message.substring(7).split(' ');
         var cmd = args[1];
-       
-        //args = args.splice(7);
         switch(cmd) {
             // !ping
             case 'hello':
-                msg.channel.send("Hey!");
+                message.channel.send("Hey!");
             break;
             // Just add any case commands if you want to..
          }
-  } else if (msg.substring(0, 8) == 'nickbot?') {
-       msg.channel.send("Yes shister?");
+  } else if (message.substring(0, 8) == "nickbot?") {
+       message.channel.send("Yes shister?");
      }
 
 });
