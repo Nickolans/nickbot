@@ -43,6 +43,26 @@ bot.on('message', msg => {
             case "do you love me?":
                 msg.reply("I'm not here for commitment lol.");
             break;
+            //
+            case "what do you do?":
+                msg.reply("be a bot.");
+            break;
+            //
+            case "do you hate anyone?":
+                msg.reply("yeah Gabe.");
+            break;
+            //
+            case "who is your idol?":
+                msg.reply("GAGA.");
+            break;
+            //
+            case "who is your bestfriend?":
+                msg.reply("Meech and maybe sidknee idk.");
+            break;
+            //
+            case "fight me":
+                msg.reply("hit me I dare you.");
+            break;
          }
     } 
   
