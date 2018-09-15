@@ -5,7 +5,7 @@ const bot = new Discord.Client();
 
 bot.on('ready', async () => {
   console.log(`${bot.user.username} is online!`);
-  bot.user.setActivity(`Hey, Wassup!`);
+  bot.user.setActivity(`Hey, BRUH!`);
 });
 
 bot.on('message', msg => {
