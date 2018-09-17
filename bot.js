@@ -13,8 +13,8 @@ bot.on('ready', async () => {
 //});
 
 bot.on('message', msg => {
-    msg.content.toLowerCase;
-    if (msg.content.substring(0, 7) == 'nickbot' || msg.content.substring(0, 7) == 'Nickbot' ) {
+    let thisMessage = msg.content.toLowerCase();
+    if (thisMessage.substring(0, 7) == 'nickbot') {
       
       console.log(msg.content);
       var args = msg.content.substring(7).split(' ');
