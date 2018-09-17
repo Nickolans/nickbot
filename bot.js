@@ -18,6 +18,7 @@ bot.on('message', msg => {
       
       console.log(thisMessage);
       var args = thisMessage.substring(7).split(' ');
+      //
       var cmd = args[1];
       
        if (args.length > 2) {
