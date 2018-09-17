@@ -71,6 +71,14 @@ bot.on('message', msg => {
             case "hey":
                 msg.reply("hey girl!");
             break;
+            //
+            case "do you like biology?":
+                msg.reply("what's that?");
+            break;
+            //
+            case "who ur fave":
+                msg.reply("none y'all.");
+            break;
          }
     } 
   
