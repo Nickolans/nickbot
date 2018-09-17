@@ -87,6 +87,10 @@ bot.on('message', msg => {
             case "you suck":
                 msg.reply("takes one to know one.");
             break;
+            //
+            case "santana...":
+                msg.reply("...sucks");
+            break;
           default: 
             msg.reply(cmd);
             break;
