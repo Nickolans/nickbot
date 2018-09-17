@@ -16,8 +16,8 @@ bot.on('message', msg => {
     let thisMessage = msg.content.toLowerCase();
     if (thisMessage.substring(0, 7) == 'nickbot') {
       
-      console.log(msg.content);
-      var args = msg.content.substring(7).split(' ');
+      console.log(thisMessage);
+      var args = thisMessage.substring(7).split(' ');
       var cmd = args[1];
       
        if (args.length > 2) {
