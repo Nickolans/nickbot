@@ -79,6 +79,14 @@ bot.on('message', msg => {
             case "who ur fave":
                 msg.reply("none y'all.");
             break;
+            //
+            case "u suck":
+                msg.reply("takes one to know one.");
+            break;
+            //
+            case "you suck":
+                msg.reply("takes one to know one.");
+            break;
          }
     } 
   
