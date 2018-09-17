@@ -93,7 +93,7 @@ bot.on('message', msg => {
          }
     } 
   
-  if (msg.content.substring(0, 8) == 'nickbot?' || msg.content.substring(0, 8) == 'Nickbot?') {
+  if (msg.content.substring(0, 8) == 'nickbot?') {
       msg.reply('yes shister?');
     }
   });
