@@ -13,30 +13,31 @@ bot.on('ready', async () => {
 //});
 
 bot.on('message', msg => {
+    //Lowercase message
     let thisMessage = msg.content.toLowerCase();
+    //See if text contains nickbot
     if (thisMessage.substring(0, 7) == 'nickbot') {
-      
-      console.log(thisMessage);
-      var args = thisMessage.substring(7).split(' ');
-      //
-      var cmd = args[1];
-      
-       if (args.length > 2) {
-               console.log("Length > 2");
-               var newString = "";
-               for (i = 0; i < args.length; i++) { 
-                   if (i == 1) {
-                       newString = args[i]
-                   } else {
-                    newString += " " + args[i];
-                   }
+
+        //Separate command from text
+        var args = thisMessage.substring(7).split(' ');
+        var cmd = args[1];
+        
+        if (args.length > 2) {
+                console.log("Length > 2");
+                var newString = "";
+                for (i = 0; i < args.length; i++) { 
+                    if (i == 1) {
+                        newString = args[i]
+                    } else {
+                        newString += " " + args[i];
+                    }
+                }
+                console.log(newString);
+                cmd = newString;
             }
-             console.log(newString);
-             cmd = newString;
-           }
        
         switch(cmd) {
-            // !ping
+            //
             case "hello":
                 msg.reply("Hey!");
             break;
