@@ -38,6 +38,10 @@ bot.on('message', msg => {
        
         switch(cmd) {
             //
+            case "help":
+                msg.reply("Here are a list of my commands! https://www.nickolans.com/nickbot");
+            break;
+            //
             case "hello":
                 msg.reply("Hey!");
             break;
