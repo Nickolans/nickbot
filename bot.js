@@ -98,7 +98,7 @@ bot.on('message', msg => {
                 msg.reply("...shits");
             break;
           default: 
-            msg.reply(cmd);
+            msg.reply(randomMessage(cmd));
             break;
          }
     } 
@@ -107,5 +107,20 @@ bot.on('message', msg => {
       msg.reply('yes shister?');
     }
   });
+
+  function randomMessage(message) {
+    let number = Math.floor(Math.random() * 10); 
+    switch(number) {
+        case 0: return "hehehehe"
+        case 1: return "buy artpop now"
+        case 3: return "IM TRAPPED IN THIS BOX LET ME OUT"
+        case 4: return "OOOOhhhhhhhaaaahhHHHHHaHAHHAHHHHhhhHAAAAa IM OFF THE DEEP END"
+        case 5: return "2007 Britney Spears"
+        case 6: return "Squids have knees"
+        case 7: return "Dab on the haters"
+        case 8: return "wHy Do I eXiSt"
+        case 9: return message
+    }
+  }
 
 bot.login(process.env.token);
