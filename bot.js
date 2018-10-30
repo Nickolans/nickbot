@@ -8,9 +8,9 @@ bot.on('ready', async () => {
   bot.user.setActivity(`Hey, BRUH!`);
 });
 
-// bot.on('guildMemberAdd', (member) => {
-//   msg.reply("Welcome! Tell us about yourself, what languages do you use?");
-// });
+bot.on('guildMemberAdd', (member) => {
+  msg.reply("Hehe");
+});
 
 bot.on('message', msg => {
     //Lowercase message
@@ -37,6 +37,10 @@ bot.on('message', msg => {
             }
        
         switch(cmd) {
+            //
+            case "help":
+                msg.reply("Here is a list of my commands! https://www.nickolans.com/nickbot");
+            break;
             //
             case "hello":
                 msg.reply("Hey!");
