@@ -9,7 +9,7 @@ bot.on('ready', async () => {
 });
 
 bot.on('guildMemberAdd', (member) => {
-  msg.reply("Hehe");
+  msg.reply("Tehe");
 });
 
 bot.on('message', msg => {
@@ -116,7 +116,7 @@ bot.on('message', msg => {
     let number = Math.floor(Math.random() * 10); 
     switch(number) {
         case 0: return "hehehehe"
-        case 1: return "buy artpop now"
+        case 1: return "buy artpop on iTunes"
         case 3: return "IM TRAPPED IN THIS BOX LET ME OUT"
         case 4: return "OOOOhhhhhhhaaaahhHHHHHaHAHHAHHHHhhhHAAAAa IM OFF THE DEEP END"
         case 5: return "2007 Britney Spears"
