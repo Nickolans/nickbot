@@ -58,18 +58,6 @@ bot.on('message', msg => {
                 msg.reply("be a bot.");
             break;
             //
-            case "do you hate anyone?":
-                msg.reply("yeah Gabe.");
-            break;
-            //
-            case "who is your idol?":
-                msg.reply("GAGA.");
-            break;
-            //
-            case "who is your bestfriend?":
-                msg.reply("Meech and maybe sidknee idk.");
-            break;
-            //
             case "fight me":
                 msg.reply("hit me I dare you.");
             break;
@@ -92,10 +80,6 @@ bot.on('message', msg => {
             //
             case "you suck":
                 msg.reply("takes one to know one.");
-            break;
-            //
-            case "santana...":
-                msg.reply("...sucks");
             break;
             //
             case "sydney...":
